@@ -39,6 +39,9 @@ decir que si uno de ellos se cae el otro toma sus actividades y las resuelve sin
 - ![4.png](Imagenes%2F4.png)
 
 # instrucciones de uso:
+- cargamos a la maquina virtual git y mvn:
+- `sudo dnf install -y git`
+- `sudo dnf install -y java-21-amazon-corretto-headless maven httpd mod ssl`
 - `git clone https://github.com/TDSE-tomaspro/TDSE_PARCIAL2.git`
 - `git mvn clean compile`
 - `mvn mvn clean run`
@@ -61,8 +64,11 @@ Luego de correrlo correctamente vamos a la cuenta de aws.
 - ![2.png](Imagenes%2F2.png)
 - ![3.png](Imagenes%2F3.png)
 ## evidencias
-- 
+- ![6.png](Imagenes%2F6.png)
 - ![3.png](Imagenes%2F3.png)
+- ![5.png](Imagenes%2F5.png)
+- ![7.png](Imagenes%2F7.png)
+- ![8.png](Imagenes%2F8.png)
 
 ## conclusiones
 - En primera instancia se puede concluir que los servidores estan sincronizados mediante HTML y JS, haciendo que la
