@@ -32,12 +32,14 @@ Salida. El formato de la salida y la respuesta debe ser un JSON con el siguiente
 {</div> <div> </div> <div> "operation": "collatzsequence",</div> <div> </div> <div> "input":  13,</div> <div> </div> 
 <div> "output":  "13 -> 40 -> 20 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1"</div> <div> </div> <div>}
 
+----------------
 # estructura
 utilizamos una estructura donde tenemos controladores, servicios y conectibilidad con dos maquinas virtuales de aws (EC2)
 esto con el fin de tener dos servidores desplegados y funcionando correctamente y respaldandose uno al otro esto quiere 
 decir que si uno de ellos se cae el otro toma sus actividades y las resuelve sin ningun problema.
 - ![4.png](Imagenes%2F4.png)
 
+---------------------
 # instrucciones de uso:
 - cargamos a la maquina virtual git y mvn:
 - `sudo dnf install -y git`
@@ -57,18 +59,23 @@ Luego de correrlo correctamente vamos a la cuenta de aws.
   - al conectarse a la instancia:
     - `ec2-52-90-147-168.compute-1.amazonaws.com`
     - se podra ver el sistema de calculo correctamente. 
-
+    
+-----------------
 ## Estructura de aws
 - comenzamos creando y cargardo correctamente las extenciones y puertos para que corra segura la aplicacion:
 - ![1.png](Imagenes%2F1.png)
 - ![2.png](Imagenes%2F2.png)
 - ![3.png](Imagenes%2F3.png)
+
+------------------
 ## evidencias
 - ![6.png](Imagenes%2F6.png)
 - ![3.png](Imagenes%2F3.png)
 - ![5.png](Imagenes%2F5.png)
 - ![7.png](Imagenes%2F7.png)
 - ![8.png](Imagenes%2F8.png)
+
+-----------------
 
 ## conclusiones
 - En primera instancia se puede concluir que los servidores estan sincronizados mediante HTML y JS, haciendo que la
