@@ -36,19 +36,37 @@ Salida. El formato de la salida y la respuesta debe ser un JSON con el siguiente
 utilizamos una estructura donde tenemos controladores, servicios y conectibilidad con dos maquinas virtuales de aws (EC2)
 esto con el fin de tener dos servidores desplegados y funcionando correctamente y respaldandose uno al otro esto quiere 
 decir que si uno de ellos se cae el otro toma sus actividades y las resuelve sin ningun problema.
+- ![4.png](Imagenes%2F4.png)
+
+# instrucciones de uso:
+- `git clone https://github.com/TDSE-tomaspro/TDSE_PARCIAL2.git`
+- `git mvn clean compile`
+- `mvn mvn clean run`
+
+Luego de correrlo correctamente vamos a la cuenta de aws.
+- Logeamos con la cuenta correctamente:
+  - creamos una instancia de EC2 
+  - corremos por ssh o por el mismo buscador 
+  - luego instalamos las dependencias:
+    - `sudo yum install java-21-amazon-corretto-headless`
+    - `sudo yum localinstall java-21-amazon-corretto*.rpm`
+  - luego de ello ponemos los servicions de http y https a correr para que puedan conectarse a la url
+  - al conectarse a la instancia:
+    - `ec2-52-90-147-168.compute-1.amazonaws.com`
+    - se podra ver el sistema de calculo correctamente. 
 
 ## Estructura de aws
 - comenzamos creando y cargardo correctamente las extenciones y puertos para que corra segura la aplicacion:
 - ![1.png](Imagenes%2F1.png)
 - ![2.png](Imagenes%2F2.png)
-
+- ![3.png](Imagenes%2F3.png)
 ## evidencias
 - 
+- ![3.png](Imagenes%2F3.png)
 
 ## conclusiones
 - En primera instancia se puede concluir que los servidores estan sincronizados mediante HTML y JS, haciendo que la
-comunicacion sea asincronica y segura con los certificados de seguridad que nos provee los puertos "hhtps" 443 resolviendo
-el problema matematico correctamente.
+comunicacion sea asincronica.
 - al ser un programa de cliente servidor es rapido y eficiente al resolver la operacion matematica que se le esta proporcinando
 dando asi un resultado acertado y extendible
-- por ser desplegado en aws su alcance y ejecusion es mayor y eficiente.
+- por ser desplegado en aws su alcance y ejecusion es mas amplia a tal grado de usarla con una url.
