@@ -12,4 +12,10 @@ public class FuncionMatematica {
         else(n.cont = funcion1);
             return n.cont(funcion1)==1;
     }
+    public int getFuncion() {
+        return funcion;
+    }
+    public int getFuncion1() {
+        return funcion1;
+    }
 }
